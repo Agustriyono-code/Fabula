@@ -7,16 +7,16 @@ import androidx.room.RoomDatabase
 import com.sai.fabula.database.dao.ArticlesDao
 import com.sai.fabula.database.model.Article
 
-//untuk mengambi data dari database
-//melalui class data article
+//TODO 3:Class room database
+//sebagia class room database
 @Database(
     entities = [Article::class],
     version = FabulaNewsDatabase.DB_VERSION
 )
-//penyimpanan sementara dari database
-//melalui roomdatabase
+//untuk proses penyimpanan database
 abstract class FabulaNewsDatabase : RoomDatabase() {
 
+    //untuk mengabstraksi class dao
     abstract fun getArticlesDao(): ArticlesDao
 
     companion object {
@@ -32,6 +32,7 @@ abstract class FabulaNewsDatabase : RoomDatabase() {
                 return tempInstance
             }
 
+            //untuk synscronisasi pada  database
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,

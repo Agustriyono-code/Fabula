@@ -9,6 +9,7 @@ import com.sai.fabula.utils.ArticleListState
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
+//TODO 6:Class VIEW model
 class MainViewModel(private val newsRepository: NewsRepository) : ViewModel() {
 
     private val _newsLiveData = MutableLiveData<ArticleListState>()

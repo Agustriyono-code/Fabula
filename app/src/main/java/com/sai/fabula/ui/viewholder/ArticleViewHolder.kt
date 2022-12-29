@@ -12,10 +12,12 @@ import io.reactivex.rxjava3.subjects.PublishSubject
  *
  * @see NewsAdapter
  */
+//TODO 8:Class View Holder untuk binding ke activity
+
 class ArticleViewHolder(private val binding: ItemArticleBinding, private val publishSubject: PublishSubject<String>)
     : RecyclerView.ViewHolder(binding.root) {
 
-    //class yang ada pada dat adapter
+    //untuk binding terhadap activity
     fun bind(article: Article) {
         binding.articleTitle.text = article.title
         binding.articleAuthor.text = article.author

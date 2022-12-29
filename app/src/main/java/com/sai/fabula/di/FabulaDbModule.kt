@@ -5,7 +5,6 @@ import com.sai.fabula.database.FabulaNewsDatabase
 
 class FabulaDbModule(private val application: FabulaApp) {
 
-    //mendapatakan newfabuladatabase
-    //dengan implementasi class
+    //mengambil database
     fun getNewsDatabase() = FabulaNewsDatabase.getInstance(application)
 }

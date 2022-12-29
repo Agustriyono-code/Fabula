@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import timber.log.Timber
 
+//TODO 5:Class Repository
 @ExperimentalCoroutinesApi
 
 //repository data pada fabula aricle
@@ -24,7 +25,7 @@ class NewsRepository(private val fabulaDbModule: FabulaDbModule,
     fun getNews() = flow {
         emit(State.Loading<List<Article>>())
 
-        //cek api response
+        //cek jika jaringan eror
         try {
             val apiResponse = fetchFromApi()
 
@@ -36,6 +37,7 @@ class NewsRepository(private val fabulaDbModule: FabulaDbModule,
             } else {
                 emit(State.error<List<Article>>(apiResponse.message()))
             }
+            //mrngembalikan pesan erroe pada jaringan
         } catch (e: Exception) {
             emit(State.error<List<Article>>("Network error! Can't get latest news articles"))
             Timber.e(e)

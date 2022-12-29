@@ -8,6 +8,7 @@ import com.sai.fabula.database.model.Article
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 
+//TODO 4: class entytas
 //akses data dari fabulanews dari database
 @ExperimentalCoroutinesApi
 @Dao

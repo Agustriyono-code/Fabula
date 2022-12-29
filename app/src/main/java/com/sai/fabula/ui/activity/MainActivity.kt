@@ -24,6 +24,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 //implementasi api coroutine
 @ExperimentalCoroutinesApi
+//TODO 9:mengatur tampilan ui
 class MainActivity : AppCompatActivity() {
 
     private val viewModel: MainViewModel by viewModel()

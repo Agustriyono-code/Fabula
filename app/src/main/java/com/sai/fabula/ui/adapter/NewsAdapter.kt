@@ -10,6 +10,7 @@ import com.sai.fabula.ui.viewholder.ArticleViewHolder
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.subjects.PublishSubject
 
+//TODO 7:Class Adapter
 class NewsAdapter : ListAdapter<Article, ArticleViewHolder>(DIFF_CALLBACK) {
 
     private val clickSubject: PublishSubject<String> = PublishSubject.create()
@@ -22,6 +23,7 @@ class NewsAdapter : ListAdapter<Article, ArticleViewHolder>(DIFF_CALLBACK) {
 
     override fun getItemCount() = articleList.size
 
+    //untuk mengambil list article
     fun setArticles(articles: List<Article>) {
         this.articleList.clear()
         this.articleList.addAll(articles)

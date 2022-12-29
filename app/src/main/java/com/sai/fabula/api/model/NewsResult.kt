@@ -2,6 +2,7 @@ package com.sai.fabula.api.model
 
 import com.squareup.moshi.Json
 
+//TODO 2: class data web api
 //mengimport data dari url info
 //dengan mengubah json response menjadi class  melalalui pojo
 //dengan generate name newsResult

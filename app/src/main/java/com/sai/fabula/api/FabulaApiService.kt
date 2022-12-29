@@ -2,7 +2,7 @@ package com.sai.fabula.api
 
 import com.sai.fabula.utils.ArticlesResponse
 import retrofit2.http.GET
-
+//TODO  1:web api
 //untuk mengambil berita atau datadari news api
 interface FabulaApiService {
 

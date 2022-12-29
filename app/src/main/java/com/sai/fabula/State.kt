@@ -2,7 +2,7 @@ package com.sai.fabula
 
 sealed class State<T> {
 
-    //alert tampilan saat launch
+    //cek jaringan saat launcing
     class Loading<T> : State<T>()
 
     data class Success<T>(val data: T) : State<T>()

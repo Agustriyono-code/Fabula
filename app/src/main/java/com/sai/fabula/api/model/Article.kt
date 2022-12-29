@@ -4,6 +4,7 @@ package com.sai.fabula.api.model
 //untuk mempresentasikan data menjadi sebuah class
 import com.squareup.moshi.Json
 
+//TODO 2: class data web api
 //data class diambil dari url diubah dari json response
 //dengan generate objack name article
 data class Article(

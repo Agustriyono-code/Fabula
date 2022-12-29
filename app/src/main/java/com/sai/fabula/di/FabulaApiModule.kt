@@ -8,7 +8,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 class FabulaApiModule {
 
-    //mengambil dari news api fabula  dengan menggunkan retrofit
+    //untuk membangun  retrofit yg digunakan untuk mengambil data dari internet
     //dengan new_api_url
     //dependency injection
     fun getFabulaApiService(): FabulaApiService = Retrofit.Builder()
